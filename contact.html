@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specs & Test Drive</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About 911</a>
+            <a href="contact.html" class="active">Specs & Test Drive</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Model Comparison & Test Drive</h1>
+        
+        <table>
+            <caption>Porsche 911 Trims Comparison</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Model</th>
+                    <th scope="col">Engine Type</th>
+                    <th scope="col">Horsepower</th>
+                    <th scope="col">0-100 km/h</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Carrera</th>
+                    <td rowspan="2">3.0L Twin-Turbo</td>
+                    <td>385 HP</td>
+                    <td>4.0s</td>
+                </tr>
+                <tr>
+                    <th scope="row">Carrera S</th>
+                    <td>443 HP</td>
+                    <td>3.5s</td>
+                </tr>
+                <tr>
+                    <th scope="row">Turbo S</th>
+                    <td>3.7L Twin-Turbo</td>
+                    <td>640 HP</td>
+                    <td>2.6s</td>
+                </tr>
+                <tr>
+                    <th scope="row">GT3</th>
+                    <td rowspan="2">4.0L Naturally Aspirated</td>
+                    <td>502 HP</td>
+                    <td>3.2s</td>
+                </tr>
+                <tr>
+                    <th scope="row">GT3 RS</th>
+                    <td>518 HP</td>
+                    <td>3.0s</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">*Data based on manufacturer track estimates.</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <h2 id="form-heading">Book a Test Drive</h2>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Personal Information & Preferences</legend>
+                
+                <label for="fname">Full Name:</label>
+                <input type="text" id="fname" name="fname" required placeholder="John Doe">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="age">Age (must be 18+):</label>
+                <input type="number" id="age" name="age" min="18" max="99">
+
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date">
+
+                <p>Transmission Preference:</p>
+                <input type="radio" id="manual" name="transmission" value="manual">
+                <label for="manual">Manual</label>
+                <input type="radio" id="pdk" name="transmission" value="pdk">
+                <label for="pdk">Automatic (PDK)</label>
+                
+                <br>
+                <button type="submit">Submit Request</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2026 Sports Cars Hub.</p>
+    </footer>
+</body>
+</html>
